@@ -10,6 +10,7 @@ int main(){
 	scanf("%d", &year);
 
 	point = &year;
+	*point = 600; // dereferncing the pointer, now its value has changed
 
 	printf("\nThe year is %d", year); // print the actual number
 	printf("\n The year's address is %p", &year); // print te address of the pointer
