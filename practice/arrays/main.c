@@ -14,25 +14,18 @@ void printArray( int theArray[], int sizeOfArray){
 }
 
 // set all values in an array to a specified-number(else Zero)
-// int * setToValue(const int theArray[], int value = 0){
+// int * setToValue(int theArray[], int sizeOfArray, int value){
+// 	// static int newArray[sizeOfArray];
+// 	int newArray[sizeOfArray];
 // 	for (int i = 0; i < sizeOfArray; ++i)
 // 	{	
-// 			// i first need to write a function thats gonna get the size of the array 
+// 		newArray[i] = 0;
 // 	}
+// 	print(newArray);
+// 	return newArray;
 // }
 
 
-
-
-// algorithm top get the size of an array
-void sizeOfArray(int theArray[]){
-	// printArray(theArray, 4);
-	int value1 = sizeof *theArray;
-	int value2 = sizeof *theArray ;
-	// int size = sizeof theArray / sizeof theArray[0];
-	int a = 1;
-	printf("%d", value1/value2);	
-}
 
 
 int main(){
@@ -43,7 +36,11 @@ int main(){
 	// determine the size of array in BYTES:
 	// int size = sizeof balance2 / sizeof balance2[0];
 	// printf("%d", size);	
-	sizeOfArray(balance2);
+	// sizeOfArray(balance2);
+
+	setToValue(balance2, 4, 0);
+
+
 
 	// printArray(balance2, 4);
 	return 0;

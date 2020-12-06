@@ -7,9 +7,3 @@ void printArray(const int theArray[], int sizeOfArray){
 		printf("%d\n", theArray[i]);
 	}
 }
-
-int main(){
-	
-
-	return 0;
-}
